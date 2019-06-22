@@ -1,0 +1,45 @@
+.nav-container {
+    width: 100%;
+    height: 70px;
+    background-color: @nav-bg;
+    display: flex;
+    justify-content: center;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+
+
+
+    .logo {
+        color: @accent-color;
+        font-family: @accent-font;
+        width: 40%;
+        font-size: @logo;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 600px;
+        height: 100%;
+    
+        a {
+            text-decoration: none;
+            color: @nav-font-color;
+            font-size: @nav-items;
+
+            &:hover {
+                color: @accent-color;
+            }
+        }
+    }
+}
+
