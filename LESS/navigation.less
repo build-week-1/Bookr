@@ -4,6 +4,8 @@
     background-color: @nav-bg;
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
+    padding: 0px 50px;
 }
 
 .navBar {
@@ -12,14 +14,14 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: @max-container-width;
 
 
 
     .logo {
         color: @accent-color;
         font-family: @accent-font;
-        width: 40%;
+        width: 60%;
         font-size: @logo;
     }
 
@@ -27,7 +29,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
+        width: 40%;
         max-width: 600px;
         height: 100%;
     
