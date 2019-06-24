@@ -20,10 +20,10 @@
         <div class="navBar">
             <h1>Bookr</h1>
             <nav>
-                <a href="">Home</a>
+                <a href="index.html">Home</a>
                 <a href="">About</a>
                 <a href="">Collections</a>
-                <a href="">Contact Us</a>
+                <a href="contact.html">Contact Us</a>
                 <a href="">Sign Up</a>
             </nav>
         </div>
@@ -34,24 +34,38 @@
             <h2>Contact Us</h2>
             <p>Have any questions? We'd love to hear from you!</p>
             </div>
+            <div class="content">
+            <div class="rightAlign">
+                <h3>Corporate Office</h3>
+                <p>3823 Palmer Road<br />
+                    Westerville, OH 43081
+                </p>
+                <h3>Direct Contact</h3>
+                <p>Phone Number: 614-723-7051<br />
+                    Toll Free: 1-800-712-3712<br />
+                    Email: bookr_support@gmail.com</p>
+
+            </div>
             <form name="htmlform" method="post" action="">
                 <fieldset>
+                    <legend>Contact Us Today</legend>
              
-                  <input  type="text" name="first_name" maxlength="50" size="50" placeholder="First Name.."><br/>
+                  <input  type="text" name="first_name" maxlength="50" size="50" placeholder="First Name.." required><br/>
 
-                  <input  type="text" name="last_name" maxlength="50" size="50" placeholder="Last Name.."><br/>
+                  <input  type="text" name="last_name" maxlength="50" size="50" placeholder="Last Name.." required><br/>
 
-                  <input  type="email" name="email" maxlength="80" size="50" placeholder="Email.."><br/>
+                  <input  type="email" name="email" maxlength="80" size="50" placeholder="Email.." required><br/>
 
-                  <input  type="tel" name="telephone" maxlength="30" size="50" placeholder="Phone Number"><br/>  
+                  <input  type="tel" name="telephone" maxlength="30" size="50" placeholder="Phone Number" required><br/>  
 
-                  <textarea  name="comments" maxlength="1000" cols="60" rows="10" placeholder="Enter message here.."></textarea><br/>
+                  <textarea  name="comments" maxlength="1000" cols="60" rows="10" placeholder="Enter message here.." required></textarea><br/>
                   
                   <div class="submit">
                   <input type="submit" value="Submit">
                   </div>
                 </fieldset>
                 </form>
+            </div>
         </main>
         <!-- Footer -->
         <footer>
