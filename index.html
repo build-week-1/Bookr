@@ -33,181 +33,184 @@
             <!--Header-->
                 <header>
                     <div class="banner home">
-                        <h2>Finding the perfect textbook made easy.</h2>
-                        <p>Choose a topic, find your fit, and get learning.<br>
-                        It's that simple because it should be.
-                        </p>
-                        <div class="btn">Sign Up</div>
+                        <div class="banner-content home">
+                            <h2>Finding the perfect textbook made easy.</h2>
+                            <p>Choose a topic, find your fit, and get learning.</p>
+                            <p>It's that simple because it should be.</p>
+                            </p>
+                            <div class="btn">Sign Up</div>
+                        </div>
                     </div>
                 </header>
             <main>
-                <h3>Browse Top Rated by Category</h3>
-                <!-- TABS COMPONENT -->
-                <div class="tabs">
-                    <div class="categories">
-                        <div data-tab="science" class="tab active-tab">Science</div>
-                        <div data-tab="finance" class="tab">Finance</div>
-                        <div data-tab="math" class="tab">Math</div>
-                        <div data-tab="economics" class="tab">Economics</div>
-                        <div data-tab="history" class="tab">History</div>
+                <div class="top-rated home">
+                    <div class="top-rated-bar">
+                        <h3>Browse Top Rated by Category</h3>
+                        <!-- TABS COMPONENT -->
+                        <div class="tabs">
+                            <div class="categories">
+                                <div data-tab="science" class="tab active-tab">Science</div>
+                                <div data-tab="finance" class="tab">Finance</div>
+                                <div data-tab="math" class="tab">Math</div>
+                                <div data-tab="economics" class="tab">Economics</div>
+                                <div data-tab="history" class="tab">History</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- TextBook COMPONENT -->
-                <div class="textbook-container">
-                    <!-- TextBook COMPONENTS -->
-                    <div class="textbook" data-tab="science">
-                        <figure>
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/51GZwtH2vbL._SX388_BO1,204,203,200_.jpg" alt="science text-book" />
-                        </figure>
-                        <h3 class="title">Materials Science and Engineering: An Introduction</h3>
-                        <div class="author">
-                            <p>By William D. Callister Jr & David G. Rethwisch</p>
+                    <!-- TextBook COMPONENT -->
+                    <div class="textbook-container">
+                        <!-- TextBook COMPONENTS -->
+                        <div class="textbook" data-tab="science">
+                            <figure>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/51GZwtH2vbL._SX388_BO1,204,203,200_.jpg" alt="science text-book" />
+                            </figure>
+                            <h3 class="title">Materials Science and Engineering</h3>
+                            <div class="author">
+                                <p>By William D. Callister Jr & David G. Rethwisch</p>
+                            </div>
                         </div>
-                        <div class="starRating">
-                            <x-star-rating value="3" number="5"></x-star-rating>
-                            <script src="StarRating.js"></script>
+                
+                        <div class="textbook" data-tab="science">
+                            <figure>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/41Iyv2Vhb6L._SX379_BO1,204,203,200_.jpg" alt="science text-book" />
+                            </figure>
+                            <h3 class="title">Cognitive Neuroscience</h3>
+                            <div class="author">
+                                <p>by Marie T. Banich & Rebecca J. Compton</p>
+                            </div>
                         </div>
-                    </div>
-            
-                    <div class="textbook" data-tab="science">
-                        <figure>
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/41Iyv2Vhb6L._SX379_BO1,204,203,200_.jpg" alt="science text-book" />
-                        </figure>
-                        <h3 class="title">Cognitive Neuroscience <span>4th Edition</span></h3>
-                        <div class="author">
-                            <p>by Marie T. Banich & Rebecca J. Compton</p>
+                        <div class="textbook" data-tab="finance">
+                            <figure>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/416jeBd9puL._SX384_BO1,204,203,200_.jpg" alt="finance text-book"/>
+                            </figure>
+                            <h3 class="title">Introduction to Finance</h3>
+                            <div class="author">
+                                <p>by Ronald W. Melicher & Edgar A. Norton</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="textbook" data-tab="finance">
-                        <figure>
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/416jeBd9puL._SX384_BO1,204,203,200_.jpg" alt="finance text-book"/>
-                        </figure>
-                        <h3 class="title">Introduction to Finance: Markets, Investments, and Financial Management <span>15th Edition</span></h3>
-                        <div class="author">
-                            <p>by Ronald W. Melicher & Edgar A. Norton</p>
+                
+                        <div class="textbook" data-tab="math">
+                            <figure>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/51amltJHccL._SX389_BO1,204,203,200_.jpg" alt="math text-book" />
+                            </figure>
+                            <h3 class="title">College Algebra (Collegiate Math)</span></h3>
+                            <div class="author">
+                                <p>by Julie Miller & Donna Gerken</p>
+                            </div>
                         </div>
-                    </div>
-            
-                    <div class="textbook" data-tab="math">
-                        <figure>
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/51amltJHccL._SX389_BO1,204,203,200_.jpg" alt="math text-book" />
-                        </figure>
-                        <h3 class="title">College Algebra (Collegiate Math) <span>2nd Edition</span></h3>
-                        <div class="author">
-                            <p>by Julie Miller & Donna Gerken</p>
+                
+                        <div class="textbook" data-tab="economics">
+                            <figure>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/51P4VGHMQRL._SX425_BO1,204,203,200_.jpg" alt="economics text-book" />
+                            </figure>
+                            <h3 class="title">Principles of Economics</h3>
+                            <div class="author">
+                                <p>by N. Gregory Mankiw</p>
+                            </div>
                         </div>
-                    </div>
-            
-                    <div class="textbook" data-tab="economics">
-                        <figure>
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/51P4VGHMQRL._SX425_BO1,204,203,200_.jpg" alt="economics text-book" />
-                        </figure>
-                        <h3 class="title">Principles of Economics <span>8th Edition</span></h3>
-                        <div class="author">
-                            <p>by N. Gregory Mankiw</p>
+                
+                        <div class="textbook" data-tab="finance">
+                            <figure>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/51fgYG2wbzL._SX398_BO1,204,203,200_.jpg" alt="finance text-book" />
+                            </figure>
+                            <h3 class="title">Fundamentals of Corporate Finance</h3>
+                            <div class="author"> 
+                                <p>by Stephen A. Ross Franco Modigliani Professor of Financial Economics, Randolph W Westerfield Robert R. Dockson Deans Chair in Bus. Admin. & Bradford D Jordan Professor</p>
+                            </div>
                         </div>
-                    </div>
-            
-                    <div class="textbook" data-tab="finance">
-                        <figure>
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/51fgYG2wbzL._SX398_BO1,204,203,200_.jpg" alt="finance text-book" />
-                        </figure>
-                        <h3 class="title">Fundamentals of Corporate Finance <span>11th Edition</span></h3>
-                        <div class="author"> 
-                            <p>by Stephen A. Ross Franco Modigliani Professor of Financial Economics, Randolph W Westerfield Robert R. Dockson Deans Chair in Bus. Admin. & Bradford D Jordan Professor</p>
+                
+                        <div class="textbook" data-tab="history">
+                            <figure>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/51zJzrhC3nL._SX419_BO1,204,203,200_.jpg" alt="history text-book" />
+                            </figure>
+                            <h3 class="title">American History</span></h3>
+                            <div class="author"> 
+                                <p>by Alan Brinkley</p>
+                            </div>
                         </div>
-                    </div>
-            
-                    <div class="textbook" data-tab="history">
-                        <figure>
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/51zJzrhC3nL._SX419_BO1,204,203,200_.jpg" alt="history text-book" />
-                        </figure>
-                        <h3 class="title">American History: Connecting with the Past <span>15th Edition</span></h3>
-                        <div class="author"> 
-                            <p>by Alan Brinkley</p>
+                
+                        <div class="textbook" data-tab="history">
+                            <figure>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/51ONXEczNgL._SX390_BO1,204,203,200_.jpg" alt="history text-book" />
+                            </figure>
+                            <h3 class="title">Western Civilization</h3>
+                            <div class="author">
+                                <p>by Margaret L. King</p>
+                            </div>
                         </div>
-                    </div>
-            
-                    <div class="textbook" data-tab="history">
-                        <figure>
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/51ONXEczNgL._SX390_BO1,204,203,200_.jpg" alt="history text-book" />
-                        </figure>
-                        <h3 class="title">Western Civilization: A Social and Cultural History (Vol. 1, Prehistory-1750) <span>1st Edition</span></h3>
-                        <div class="author">
-                            <p>by Margaret L. King</p>
+                
+                        <div class="textbook" data-tab="economics">
+                            <figure>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/41lCZ%2Br5-YL._SX423_BO1,204,203,200_.jpg" alt="economics text-book" />
+                            </figure>
+                            <h3 class="title">Economics </h3>
+                            <div class="author"> 
+                                <p>by Dean S. Karlan Assistant Professor of Exonomics &  Jonathan J. Morduch Assistant Professor of Economics</p>
+                            </div>
                         </div>
-                    </div>
-            
-                    <div class="textbook" data-tab="economics">
-                        <figure>
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/41lCZ%2Br5-YL._SX423_BO1,204,203,200_.jpg" alt="economics text-book" />
-                        </figure>
-                        <h3 class="title">Economics (McGraw-Hill Economics Series) <span>2nd Edition</span></h3>
-                        <div class="author"> 
-                            <p>by Dean S. Karlan Assistant Professor of Exonomics &  Jonathan J. Morduch Assistant Professor of Economics</p>
+                
+                        <div class="textbook" data-tab="math">
+                            <figure>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/41SQD8vSH7L._SX385_BO1,204,203,200_.jpg" alt="math text-book" />
+                            </figure>
+                            <h3 class="title">SAT 2019 Math Practice Book</h3>
+                            <div class="author">
+                                <p>by American Math Academy</p>
+                            </div>
                         </div>
-                    </div>
-            
-                    <div class="textbook" data-tab="math">
-                        <figure>
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/41SQD8vSH7L._SX385_BO1,204,203,200_.jpg" alt="math text-book" />
-                        </figure>
-                        <h3 class="title">New SAT 2019 Math Practice Book</h3>
-                        <div class="author">
-                            <p>by American Math Academy</p>
+                
+                        <div class="textbook" data-tab="science">
+                            <figure>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/41yveDt94YL._SX338_BO1,204,203,200_.jpg" alt="science text-book" />
+                            </figure>
+                            <h3 class="title">Clinical Echocardiography</h3>
+                            <div class="author">
+                                <p>by Catherine M. Otto MD</p>
+                            </div>
                         </div>
-                    </div>
-            
-                    <div class="textbook" data-tab="science">
-                        <figure>
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/41yveDt94YL._SX338_BO1,204,203,200_.jpg" alt="science text-book" />
-                        </figure>
-                        <h3 class="title">Textbook of Clinical Echocardiography 6th Edition</h3>
-                        <div class="author">
-                            <p>by Catherine M. Otto MD</p>
+                
+                        <div class="textbook" data-tab="science">
+                            <figure>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/510ksOQGlwL._SX331_BO1,204,203,200_.jpg" alt="science text-book" />
+                            </figure>
+                            <h3 class="title">Computer Science Principles</h3>
+                            <div class="author">
+                                <p>by Mr. Kevin P Hare & Mr. Pindar Van Arman</p>
+                            </div>
                         </div>
-                    </div>
-            
-                    <div class="textbook" data-tab="science">
-                        <figure>
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/510ksOQGlwL._SX331_BO1,204,203,200_.jpg" alt="science text-book" />
-                        </figure>
-                        <h3 class="title">Computer Science Principles: The Foundational Concepts of Computer Science - For AP® Computer Science Principles 2nd Edition</h3>
-                        <div class="author">
-                            <p>by Mr. Kevin P Hare & Mr. Pindar Van Arman</p>
+                
+                        <div class="textbook" data-tab="math">
+                            <figure>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/519LB1vPzrL._SX389_BO1,204,203,200_.jpg" alt="math text-book" />
+                            </figure>
+                            <h3 class="title">Precalculus</h3>
+                            <div class="author"> 
+                                <p>by James Stewart, Lothar Redlin, & Saleem Watson</p>
+                            </div>
                         </div>
-                    </div>
-            
-                    <div class="textbook" data-tab="math">
-                        <figure>
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/519LB1vPzrL._SX389_BO1,204,203,200_.jpg" alt="math text-book" />
-                        </figure>
-                        <h3 class="title">Precalculus: Mathematics for Calculus (Standalone Book) 7th Edition</h3>
-                        <div class="author"> 
-                            <p>by James Stewart, Lothar Redlin, & Saleem Watson</p>
+                
+                        <div class="textbook" data-tab="economics">
+                            <figure>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/51bAazRkTJL._SX366_BO1,204,203,200_.jpg" alt="economics text-book" />
+                            </figure>
+                            <h3 class="title">Economics 101</h3>
+                            <div class="author">
+                                <p>by Alfred Mill</p>
+                            </div>
                         </div>
-                    </div>
-            
-                    <div class="textbook" data-tab="economics">
-                        <figure>
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/51bAazRkTJL._SX366_BO1,204,203,200_.jpg" alt="economics text-book" />
-                        </figure>
-                        <h3 class="title">Economics 101: From Consumer Behavior to Competitive Markets--Everything You Need to Know About Economics (Adams 101)</h3>
-                        <div class="author">
-                            <p>by Alfred Mill</p>
-                        </div>
-                    </div>
-            
-                    <div class="textbook" data-tab="finance">
-                        <figure>
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/41uRBSOm9GL._SX389_BO1,204,203,200_.jpg" alt="finance text-book" />
-                        </figure>
-                        <h3 class="title">Foundations of Finance (Pearson Series in Finance) <span>9th Edition</span></h3>
-                        <div class="author">
-                            <p>by Arthur J. Keown, John D. Martin, & J. William Petty</p>
+                
+                        <div class="textbook" data-tab="finance">
+                            <figure>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/41uRBSOm9GL._SX389_BO1,204,203,200_.jpg" alt="finance text-book" />
+                            </figure>
+                            <h3 class="title">Foundations of Finance</h3>
+                            <div class="author">
+                                <p>by Arthur J. Keown, John D. Martin, & J. William Petty</p>
+                            </div>
                         </div>
                     </div>
+                </div>    
             </main>
         </div>
     </body>
