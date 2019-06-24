@@ -209,15 +209,20 @@ footer {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding: 1%;
 }
 footer p {
   color: #E5E5E5;
+  box-sizing: border-box;
+  padding-top: 2%;
+  padding-left: 1%;
+}
+footer img {
+  margin: 50%;
 }
 footer li {
   list-style: none;
-  margin: 10px;
+  margin: 15px;
   display: inline-block;
   font-size: 20px;
   padding: 10px 10px;
