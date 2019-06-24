@@ -1,0 +1,25 @@
+
+.btn-styler(@size: @med-btn) {
+    background-color: @navy-blue;
+    color: @accent-color;
+    padding: 10px 15px;
+    font-weight: bold;
+    width: @size;
+    font-size: 2rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transition: background-color 0.2s;
+
+    &:hover {
+    background-color: @accent-color;
+    color: @navy-blue;
+    border: 0.5px solid @accent-color;
+    }
+
+    @media @phone {
+      width: 100%;
+      padding: 25px 0px;
+    }
+  }
