@@ -136,15 +136,15 @@ table {
   height: 60%;
 }
 .contactHeader h2 {
-  color: #161B28;
   font-family: 'Lato', sans-serif;
+  color: #161B28;
   font-size: 6rem;
   box-sizing: border-box;
   padding-top: 8%;
 }
 .contactHeader p {
-  color: #161B28;
   font-family: 'Lato', sans-serif;
+  color: #161B28;
   font-size: 1.5rem;
   box-sizing: border-box;
   padding-top: 1%;
@@ -169,8 +169,8 @@ table {
 .navBar nav a {
   text-align: center;
   font-size: 1rem;
-  color: #E5E5E5;
   font-family: 'Lato', sans-serif;
+  color: #E5E5E5;
   text-decoration: none;
   box-sizing: border-box;
   padding-right: 30px;
@@ -188,23 +188,23 @@ table {
   margin-left: 6%;
 }
 .content .rightAlign h3 {
-  color: #161B28;
   font-family: 'Lato', sans-serif;
+  color: #161B28;
   font-size: 2.3rem;
-  margin-bottom: 4%;
+  margin-bottom: 10%;
   margin-top: 40%;
 }
 .content .rightAlign p {
-  color: #161B28;
   font-family: 'Lato', sans-serif;
+  color: #161B28;
   font-size: 1.2rem;
 }
 .content form {
   margin-right: 6%;
 }
 .content form legend {
-  color: #161B28;
   font-family: 'Lato', sans-serif;
+  color: #161B28;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 4%;
@@ -223,8 +223,8 @@ table {
 }
 .content form input[type='submit'] {
   background: white;
-  color: #161B28;
   font-family: 'Lato', sans-serif;
+  color: #161B28;
   font-size: 1.1rem;
   width: 40%;
   cursor: pointer;
@@ -239,8 +239,8 @@ footer {
   justify-content: space-between;
 }
 footer p {
-  color: #E5E5E5;
   font-family: 'Lato', sans-serif;
+  color: #E5E5E5;
   box-sizing: border-box;
   padding: 2% 0 0 1%;
 }
