@@ -126,6 +126,48 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.nav-container {
+  width: 100%;
+  height: 70px;
+  background-color: #161B28;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0px 50px;
+}
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+}
+.navBar .logo {
+  color: #44BB88;
+  font-family: 'Kite One', sans-serif;
+  width: 60%;
+  font-size: 1.75rem;
+}
+.navBar .logo:hover {
+  cursor: pointer;
+}
+.navBar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  max-width: 600px;
+  height: 100%;
+}
+.navBar nav a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.03rem;
+}
+.navBar nav a:hover {
+  color: #44BB88;
+}
 .contactHeader {
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiUGU5pOeslurdKWPXk_CC6c8LI3FGwst76ShBcgrsv1HqVDqK);
   background-repeat: no-repeat;
@@ -148,35 +190,6 @@ table {
   font-size: 1.5rem;
   box-sizing: border-box;
   padding-top: 1%;
-}
-.navBar {
-  display: flex;
-  justify-content: space-between;
-  background: #161B28;
-  box-sizing: border-box;
-  padding: 1% 2% 1% 5%;
-}
-.navBar h1 {
-  font-size: 2.5rem;
-  color: #44BB88;
-  font-family: 'Kite One', sans-serif;
-  box-sizing: border-box;
-}
-.navBar nav {
-  box-sizing: border-box;
-  padding-top: 1%;
-}
-.navBar nav a {
-  text-align: center;
-  font-size: 1rem;
-  font-family: 'Lato', sans-serif;
-  color: #E5E5E5;
-  text-decoration: none;
-  box-sizing: border-box;
-  padding-right: 30px;
-}
-.navBar nav a:hover {
-  color: #44BB88;
 }
 .content {
   display: flex;
