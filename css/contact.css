@@ -276,7 +276,12 @@ table {
 @media (max-width: 800px) {
   .content .rightAlign {
     flex-direction: row;
-    margin-left: 5%;
+    margin-left: 10%;
+  }
+}
+@media (max-width: 500px) {
+  .content .rightAlign {
+    flex-direction: column;
   }
 }
 .content .rightAlign h3 {
@@ -289,6 +294,64 @@ table {
 @media (max-width: 800px) {
   .content .rightAlign .phoneNumber {
     margin-top: 10%;
+  }
+}
+@media (max-width: 500px) {
+  .content .rightAlign .phoneNumber {
+    margin-top: 0;
+    margin-right: 15%;
+  }
+}
+.content .rightAlign .faq {
+  border: 1px solid #161B28;
+  margin-top: 15%;
+  margin-right: 10%;
+  box-sizing: border-box;
+  padding-bottom: 10%;
+}
+@media (max-width: 800px) {
+  .content .rightAlign .faq {
+    border: none;
+  }
+}
+@media (max-width: 500px) {
+  .content .rightAlign .faq {
+    margin-right: 15%;
+  }
+}
+.content .rightAlign .faq h3 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.content .rightAlign .faq .question {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 70%;
+  text-align: center;
+  border: 1px solid #161B28;
+  outline: none;
+  transition: 0.4s;
+}
+.content .rightAlign .faq .active,
+.content .rightAlign .faq .question:hover {
+  background-color: #161B28;
+  color: #fff;
+}
+.content .rightAlign .faq .answer {
+  padding: 15px 18px 15px 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  width: 64%;
+  border: 1px solid #161B28;
+  margin-left: 15%;
+}
+@media (max-width: 800px) {
+  .content .rightAlign .faq .answer {
+    border: none;
+    width: 61%;
   }
 }
 @media (max-width: 800px) {
