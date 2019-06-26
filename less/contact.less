@@ -7,11 +7,18 @@
 .contactHeader {
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiUGU5pOeslurdKWPXk_CC6c8LI3FGwst76ShBcgrsv1HqVDqK);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 60%;
+
+    @media(max-width: 800px){
+        height: 50%;
+    }
+    @media(max-width: 500px){
+        height: 40%;
+    }
 
     h2 {
         font-family: 'Lato', sans-serif;
@@ -19,6 +26,10 @@
         font-size: 6rem;
         box-sizing: border-box;
         padding-top: 8%;
+
+        @media(max-width: 500px){
+            font-size: 4.5rem;
+        }
     }
 
     p {
@@ -27,23 +38,50 @@
         font-size: 1.5rem;
         box-sizing: border-box;
         padding-top: 1%;
+
+        @media(max-width: 500px){
+            font-size: 1.3rem;
+        }
     }
 }
 .content {
     display: flex;
     justify-content: space-between;
 
+    @media(max-width: 800px){
+        flex-direction: column-reverse;
+    }
+
     .rightAlign {
         display: flex;
         flex-direction: column;
-        margin-left: 6%;
+        text-align: center;
+
+        @media(max-width: 800px){
+            flex-direction: row;
+            margin-left: 5%;
+        }
 
         h3 {
             font-family: 'Lato', sans-serif;
             color: #161B28;
             font-size: 2.3rem;
             margin-bottom: 10%;
-            margin-top: 40%
+            margin-top: 10%;
+        }
+
+        .phoneNumber{
+            @media(max-width: 800px){
+                margin-top: 10%;
+            }
+        }
+
+        .faq{
+            @media(max-width: 800px){
+                margin-top: 2%;
+                box-sizing: border-box;
+                padding-bottom: 5%;
+            }
         }
 
         p {
@@ -51,11 +89,32 @@
             color: #161B28;
             font-size: 1.2rem;
         }
+
+        ul{
+            width: 70%;
+            margin-left: 15%;
+
+            li{
+                box-sizing: border-box;
+                padding-bottom: 5%;
+            }
+        }
     
     }
 
     form {
         margin-right: 6%;
+        margin-top: 5%;
+
+        @media(max-width: 500px){
+            margin-right: 0;
+        }
+
+        fieldset{
+            @media(max-width: 800px){
+                text-align: center;
+            }
+        }
 
         legend{
             font-family: 'Lato', sans-serif;
@@ -72,11 +131,19 @@
             font-size: 1.3rem;
             box-sizing: border-box;
             padding-left: 2%;
+
+            @media(max-width: 500px){
+                font-size: 1rem;
+            }
         }
 
         textarea {
             font-family: 'Lato', sans-serif;
             font-size: 1.1rem;
+
+            @media(max-width: 500px){
+                font-size: 0.9rem;
+            }
         }
 
         input[type='submit'] {
