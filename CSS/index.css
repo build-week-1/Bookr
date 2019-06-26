@@ -204,6 +204,11 @@ h6 {
   box-sizing: border-box;
   padding: 0px 50px;
 }
+@media (max-width: 500px) {
+  .nav-container {
+    height: 50%;
+  }
+}
 .navBar {
   display: flex;
   flex-direction: row;
@@ -211,6 +216,11 @@ h6 {
   align-items: center;
   width: 100%;
   max-width: 1400px;
+}
+@media (max-width: 500px) {
+  .navBar {
+    flex-direction: column;
+  }
 }
 .navBar .logo {
   color: #44BB88;
@@ -221,6 +231,20 @@ h6 {
 .navBar .logo:hover {
   cursor: pointer;
 }
+@media (max-width: 800px) {
+  .navBar .logo {
+    width: 0;
+  }
+}
+@media (max-width: 500px) {
+  .navBar .logo {
+    font-size: 2.7rem;
+    box-sizing: border-box;
+    padding-top: 5%;
+    padding-right: 25%;
+    padding-bottom: 5%;
+  }
+}
 .navBar nav {
   display: flex;
   justify-content: space-between;
@@ -229,6 +253,18 @@ h6 {
   max-width: 600px;
   height: 100%;
 }
+@media (max-width: 800px) {
+  .navBar nav {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  .navBar nav {
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-bottom: 6%;
+  }
+}
 .navBar nav a {
   text-decoration: none;
   color: #FFFFFF;
@@ -236,6 +272,18 @@ h6 {
 }
 .navBar nav a:hover {
   color: #44BB88;
+}
+@media (max-width: 500px) {
+  .navBar nav a {
+    border-bottom: 0.5px solid #fff;
+    width: 200%;
+    box-sizing: border-box;
+    padding-bottom: 5%;
+    text-align: center;
+  }
+  .navBar nav a:hover {
+    border-color: #44BB88;
+  }
 }
 .banner.home {
   height: 800px;

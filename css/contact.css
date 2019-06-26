@@ -135,6 +135,11 @@ table {
   box-sizing: border-box;
   padding: 0px 50px;
 }
+@media (max-width: 500px) {
+  .nav-container {
+    height: 50%;
+  }
+}
 .navBar {
   display: flex;
   flex-direction: row;
@@ -142,6 +147,11 @@ table {
   align-items: center;
   width: 100%;
   max-width: 1400px;
+}
+@media (max-width: 500px) {
+  .navBar {
+    flex-direction: column;
+  }
 }
 .navBar .logo {
   color: #44BB88;
@@ -152,6 +162,20 @@ table {
 .navBar .logo:hover {
   cursor: pointer;
 }
+@media (max-width: 800px) {
+  .navBar .logo {
+    width: 0;
+  }
+}
+@media (max-width: 500px) {
+  .navBar .logo {
+    font-size: 2.7rem;
+    box-sizing: border-box;
+    padding-top: 5%;
+    padding-right: 25%;
+    padding-bottom: 5%;
+  }
+}
 .navBar nav {
   display: flex;
   justify-content: space-between;
@@ -160,6 +184,18 @@ table {
   max-width: 600px;
   height: 100%;
 }
+@media (max-width: 800px) {
+  .navBar nav {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  .navBar nav {
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-bottom: 6%;
+  }
+}
 .navBar nav a {
   text-decoration: none;
   color: #FFFFFF;
@@ -167,6 +203,18 @@ table {
 }
 .navBar nav a:hover {
   color: #44BB88;
+}
+@media (max-width: 500px) {
+  .navBar nav a {
+    border-bottom: 0.5px solid #fff;
+    width: 200%;
+    box-sizing: border-box;
+    padding-bottom: 5%;
+    text-align: center;
+  }
+  .navBar nav a:hover {
+    border-color: #44BB88;
+  }
 }
 .contactHeader {
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiUGU5pOeslurdKWPXk_CC6c8LI3FGwst76ShBcgrsv1HqVDqK);
