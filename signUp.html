@@ -1,34 +1,51 @@
 <head>
-        <title>Bookr-Sign Up/Login</title>
-        <link rel="stylesheet" type="text/css" href="css/signUp.css">
-        <link href="https://fonts.googleapis.com/css?family=Kite+One|Lato&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <!--Nav-->
-        <div class="nav-container">
-            <div class="navBar">
-                <h1 class="logo">Bookr</h1>
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="">About</a>
-                    <a href="">Collections</a>
-                    <a href="contact.html">Contact Us</a>
-                    <a href="signUp.html">Sign Up</a>
-                </nav>
-            </div>
+    <title>Bookr-Sign Up/Login</title>
+    <link rel="stylesheet" type="text/css" href="css/signUp.css">
+    <link href="https://fonts.googleapis.com/css?family=Kite+One|Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/signUp.js" async></script>
+</head>
+<body>
+    <!-- Nav -->
+    <div class="nav-container">
+        <div class="navBar">
+            <h1 class="logo">Bookr</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="">About</a>
+                <a href="">Collections</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="signUp.html">Sign Up</a>
+            </nav>
         </div>
-        <div id="login-box">
-            <div class="left-box">
-                <h1>Sign Up</h1>
-    
-                <input type="text" name="username" placeholder="Username"/>
-                <input type="text" name="email" placeholder="Email"/>
-                <input type="password" name="password" placeholder="Password"/>
-                <input type="password" name="password2" placeholder="Retype Password"/>
-    
-                <input type="submit" name="signup-button" value="Sign Up"/>
+    </div>        
+    <!-- Tabs -->
+        <ul id="tab" >
+            <li class="active"><a href="#signup">Signup</a></li>
+            <li><a href="#login">Login</a></li>
+        </ul>
+    <div class="container">
+
+              
+        <!-- Forms -->
+        <div class="form">
+            <div class="tab-content">
+                <div class="tab-pane active" id="signup">
+                    <h1>Sign Up</h1>
+                    <input type="text" name="username" placeholder="Username"/>
+                    <input type="text" name="email" placeholder="Email"/>
+                    <input type="password" name="password" placeholder="Password"/>
+                    <input type="password" name="password2" placeholder="Retype Password"/><br/>
+                    <input type="submit" name="signup-button" value="Sign Up"/>
+                </div>
+                <div class="tab-pane" id="login">
+                    <h1>Login</h1>
+                    <input type="text" name="username" placeholder="Username"/>
+                    <input type="password" name="password" placeholder="Password"/><br/>   
+                    <input type="submit" name="signup-button" value="Login"/>
+                </div>
             </div>
+            <!-- Right Box -->
             <div class="right-box">
                 <span class="signinwith">Sign in with<br/>Social Network</span>
     
@@ -38,12 +55,13 @@
             </div>
             <div class="or">OR</div>
         </div>
+        </div>
+        <!-- Footer -->
         <footer>
             <p>Copyright CT 2019</p>
             <figure>
                 <img src="https://trello-attachments.s3.amazonaws.com/5d09af1cc1d39326525dbdf2/5d0aea14810d1639983fd07f/1e74e51d297102c6958565bff62dcce8/favicon-32x32.png" alt="bookr symbol">
-            </figure>
-                
+            </figure>  
             <div class="media">
                 <ul>
                     <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
@@ -53,4 +71,4 @@
             </div>
                 
         </footer>
-    </body>
+</body>
