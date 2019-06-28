@@ -516,7 +516,6 @@ h6 {
   outline: none;
   transition: 0.4s;
 }
-.content .rightAlign .faq .active,
 .content .rightAlign .faq .question:hover {
   background-color: #161B28;
   color: #fff;
