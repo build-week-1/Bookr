@@ -8,7 +8,7 @@
         <meta name="generator" content="Visual Studio Code">
 
         <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="StarRating.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
  
         <title>Bookr</title>
@@ -31,7 +31,7 @@
         </div>
         <div class="main-container">
             <!--Header-->
-                <header>
+                <header class="home">
                     <div class="banner home">
                         <div class="banner-content home">
                             <h2>Finding the perfect textbook made easy.</h2>
@@ -43,9 +43,19 @@
                     </div>
                 </header>
             <main>
-                <div class="top-rated home">
+
+                <div class="intro home">
+                            <h3>We've got you covered</h3>
+                            
+                            <p>We provide a better way to shop for textbooks to thousands of students across the country so that you can get back to business.</p>
+                            <div class="btn">Learn more</div>
+                </div>
+
+
+
+                <section class="top-rated home">
                     <div class="top-rated-bar">
-                        <h3>Browse Top Rated by Category</h3>
+                        <h3>Browse Top Rated</h3>
                         <!-- TABS COMPONENT -->
                         <div class="tabs">
                             <div class="categories">
@@ -209,8 +219,71 @@
                                 <p>by Arthur J. Keown, John D. Martin, & J. William Petty</p>
                             </div>
                         </div>
+                    </div> 
+                </section> <!--END OF TOP RATED-->
+
+                <section class="features home">
+                    <div class="feature"">
+                        <img src="../img/star-icon.png" alt="black star icon" />
+                        <h3>Browse by Rating</h3>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                     </div>
-                </div>    
+                    <div class="feature">
+                        <img src="../img/dollar-sign-icon.png" alt="dollar sign icon in a circle">
+                        <h3>Low Prices</h3>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                    <div class="feature">
+                        <img src="../img/reviews-icon.png" alt="three lines icon representing a paragraph">
+                        <h3>Honest Reviews</h3>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </section>
+                <section class="feedback">
+                    <img src="../img/book-icon.png" alt="icon of a closed book">
+                    <h3>What people are saying</h3>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                    <h4>- John Doe</h4>
+                    <h5>Corporation Inc.</h5>
+                    <!-- <ol>
+                        <li class="slider-nav"><a href="#">1</a></li>
+                        <li class="slider-nav"><a href="#">2</a></li>
+                        <li class="slider-nav"><a href="#">3</a></li>
+                    </ol> -->
+                </section>
+                <section class="cta-signup">
+                    <div class="cta-main-wrapper">
+                        <div class="cta-content-wrapper">
+                            <h3>Skip the hassle and create a free account today</h3>
+                        </div>
+                        <div class="button-wrapper">
+                            <div class="btn">Log in</div>
+                            <div class="btn">Try it free</div>
+                        </div>
+                    </div>
+                </section>
             </main>
         </div>
+
+
+        <!-- Footer -->
+        <footer>
+                <p>Copyrights &copy; 2019 All Rights Reserved by CT</p>
+                <figure>
+                    <img src="https://trello-attachments.s3.amazonaws.com/5d09af1cc1d39326525dbdf2/5d0aea14810d1639983fd07f/1e74e51d297102c6958565bff62dcce8/favicon-32x32.png" alt="bookr symbol">
+                </figure>
+                
+                <div class="media">
+                    <ul>
+                        <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+                
+            </footer>
     </body>
+</html>
