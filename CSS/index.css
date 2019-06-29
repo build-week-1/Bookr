@@ -234,7 +234,7 @@ h6 {
 }
 .navBar .logo {
   color: #44BB88;
-  font-family: 'poppins', sans-serif;
+  font-family: 'Kite One', sans-serif;
   width: 60%;
   font-size: 1.75rem;
 }
@@ -262,6 +262,7 @@ h6 {
   width: 40%;
   max-width: 600px;
   height: 100%;
+  min-width: 380px;
 }
 @media (max-width: 800px) {
   .navBar nav {
@@ -273,6 +274,7 @@ h6 {
     flex-direction: column;
     box-sizing: border-box;
     padding-bottom: 6%;
+    min-width: auto;
   }
 }
 .navBar nav a {
@@ -438,6 +440,9 @@ header.home {
   display: flex;
   justify-content: flex-end;
 }
+.tabs .categories .tab.active-tab {
+  border-bottom: 5px solid #44BB88;
+}
 .tabs .categories .tab {
   background-color: #f8f9fa;
   display: flex;
@@ -510,9 +515,11 @@ header.home {
 }
 .features.home {
   display: flex;
-  height: 350px;
+  height: auto;
   justify-content: space-evenly;
   align-items: center;
+  box-sizing: border-box;
+  padding: 50px 0px;
 }
 .features.home .feature {
   width: 28%;
@@ -636,6 +643,77 @@ header.home {
 .cta-signup .button-wrapper .btn:last-child {
   background-color: #44BB88;
   color: white;
+}
+.main-container.about {
+  height: 100%;
+  width: 100%;
+}
+.main-container.about .banner {
+  background: linear-gradient(rgba(56, 56, 56, 0.6), rgba(56, 56, 56, 0.6)), url("../img/about-bg.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+}
+.main-container.about .banner h2 {
+  font-size: 3.5rem;
+  font-family: 'poppins', sans-serif;
+  max-width: 500px;
+  line-height: 6rem;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #f8f9fa;
+}
+@media (max-width: 1300px) {
+  .main-container.about .banner h2 {
+    text-align: center;
+    max-width: 100%;
+    min-height: auto;
+  }
+}
+.main-container.about .philosophy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 300px;
+  align-items: center;
+  padding: 50px;
+}
+.main-container.about .philosophy .philosophy-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-container.about .philosophy .philosophy-wrapper h3 {
+  font-size: 3rem;
+  font-family: 'poppins', sans-serif;
+  max-width: 500px;
+  line-height: 4rem;
+  padding-bottom: 30px;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+@media (max-width: 1300px) {
+  .main-container.about .philosophy .philosophy-wrapper h3 {
+    max-width: 100%;
+  }
+}
+.main-container.about .philosophy .philosophy-wrapper p {
+  font-size: 1.2rem;
+  line-height: 3rem;
+  max-width: 700px;
+  text-align: center;
 }
 footer {
   background: #161B28;

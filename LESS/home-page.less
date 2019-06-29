@@ -168,10 +168,19 @@ header.home {
         width: 60%;
     }
 
+    
+
     .categories{
         display: flex;
         justify-content: flex-end;
         // width: 100%;
+        
+        .tab.active-tab {
+            // background-color: ;
+            // color: @off-white;
+            // font-weight: bold;
+            border-bottom: 5px solid @accent-color;
+        }
 
         .tab {
             background-color: @off-white;
@@ -193,6 +202,8 @@ header.home {
                 color: white;
                 cursor: pointer;
             }
+
+            
         }
     }
 }
@@ -262,15 +273,18 @@ header.home {
 
 .features.home {
     display: flex;
-    height: 350px;
+    height: auto;
     justify-content: space-evenly;
     align-items: center;
+    box-sizing: border-box;
+    padding: 50px 0px;
 
     .feature {
         width: 28%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        
 
         img {
             padding-bottom: 20px;
