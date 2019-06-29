@@ -1,0 +1,98 @@
+
+.main-container.about {
+    height: 100%;
+    width: 100%;
+
+    .banner {
+        background: linear-gradient( rgba(56, 56, 56, 0.6), rgba(56, 56, 56, 0.6) ), url("../img/about-bg.jpg");
+        // background-image: url("../img/banner.png");
+        background-size: 100%;
+        background-attachment: fixed;
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 500px;
+
+        h2 {
+            // padding-bottom: 50px;
+            font-size: 3.5rem;
+            font-family: @accent-font;
+            max-width: 500px;
+            line-height: 6rem;
+            padding-bottom: 30px;
+            text-align: center;
+            color: @off-white;
+            
+            @media (max-width: 1300px) {
+                text-align: center;
+                max-width: 100%;
+                min-height: auto;
+            }
+        }
+
+        // p {
+        //     font-size: 1.5rem;
+        //     // margin-bottom: 50px;
+        //     line-height: 3.0rem;
+        //     // max-width: 600px;
+        //     color: @off-white;
+
+        //     @media (max-width: 1300px) {
+        //         text-align: center;
+        //     }
+        // }
+    }
+
+    .philosophy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 300px;
+        align-items: center;
+        padding: 50px;
+
+        .philosophy-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+                // padding-bottom: 50px;
+                font-size: 3rem;
+                font-family: @accent-font;
+                max-width: 500px;
+                line-height: 4rem;
+                padding-bottom: 30px;
+                text-align: center;
+                // color: @off-white;
+                width: 100%;
+                margin: 0;
+                
+                @media (max-width: 1300px) {
+                    max-width: 100%;
+                }
+            }
+            p {
+                font-size: 1.2rem;
+                // margin-bottom: 50px;
+                line-height: 3.0rem;
+                max-width: 700px;
+                text-align: center;
+    
+                // color: @off-white;
+    
+                @media (max-width: 1300px) {
+                }
+            }
+        }
+    }
+}
+
