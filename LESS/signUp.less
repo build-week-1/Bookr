@@ -1,0 +1,202 @@
+@import 'index.less';
+
+body {
+    background: #efefef;
+    color: #777;
+    font-family: sans-serif;
+    font-weight: 300;
+}    
+
+ul {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 5%;
+    height: 12%;
+    
+
+    @media(max-width: 500px){
+        padding-top: 7%;
+        max-width: 450px;
+    }
+
+    li {
+        display: inline-flex;
+        
+
+        a {
+            text-decoration: none;
+            color: darkgray;
+            padding: 10px 30px 22px 30px;
+            transition: all .3s ease-in-out;
+            border-bottom: 1px solid transparent;
+            &:hover {
+                color: @nav-bg;
+            }
+        }           
+    }
+}                      
+
+.active a { 
+    color: @nav-font-color; 
+    border-bottom: 1px solid @nav-font-color;
+    background: @nav-bg;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+            
+    &:hover {
+        border-color: transparent;
+        background: @nav-font-color;
+        color: @nav-bg;
+    }          
+            
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;   
+    box-sizing: border-box;
+    padding-bottom: 5%;
+
+    @media(max-width: 500px){
+        max-width: 450px;
+    }
+}
+  
+
+.form{
+    position: relative;
+    margin: 5% auto;
+    height: 60%;
+    background: @nav-font-color;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+
+    @media(max-width: 800px){
+        margin: 1% auto;
+    }
+    .tab-content{
+        box-sizing: border-box;
+        padding: 40px;
+        width: 300px;
+        height: 400px;
+
+        @media(max-width: 500px){
+            width: 50%;
+        }
+
+        h1 {
+            margin: 0 0 20px 0;
+            font-weight: 300;
+            font-size: 1.8rem;
+        }
+
+        input[type=text], input[type=password]{
+            display: block;
+            box-sizing: border-box;
+            margin-bottom: 9%;
+            padding: 4px;
+            width: 100%;
+            height: 9%;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #aaa;
+            font-family: sans-serif;
+            font-weight: 400;
+            font-size: 0.9rem;
+            transition: 0.2s ease;
+        }
+        input[type=submit]{
+            margin-bottom: 28px;
+            width: 120px;
+            height: 32px;
+            background: @nav-bg;
+            border: none;
+            border-radius: 2px;
+            color: @nav-font-color;
+            font-family: sans-serif;
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: 0.2s ease;
+            cursor: pointer;
+        }
+        input[type=submit]:hover, input[type=submit]:focus {
+            background: @accent-color;
+            transition: 0.2s ease;
+        }
+    }
+}
+
+.tab-pane { 
+    display: none;
+}
+
+.tab-pane.active { 
+    display: block; 
+}
+
+.right-box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 7%;
+    width: 50%;
+    height: 100%;
+    background-image: url(data:image/jpeg;base64,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);
+    background-size: cover;
+    background-position: center;
+
+
+
+    .signinwith {
+        display: block;
+        margin-bottom: 40px;
+        font-size: 1.8rem;
+        color: #fff;
+        text-align: center;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    button.social {
+        margin-bottom: 20px;
+        width: 220px;
+        height: 36px;
+        border: none;
+        border-radius: 2px;
+        color: @nav-font-color;
+        font-family: sans-serif;
+        font-weight: 500;
+        transition: 0.2s ease;
+        cursor: pointer;
+        
+        @media(max-width: 500px){
+            width: 100%;
+        }
+    }
+    .facebook {
+        background: #32508e;
+    }
+    .twitter {
+        background: #55acee;
+    }
+    .google {
+        background: #dd4b39;
+    }
+}
+
+.or {
+    position: absolute;
+    top: 175px;
+    left: 285px;
+    width: 6%;
+    height: 37px;
+    background: #efefef;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    line-height: 40px;
+    text-align: center;
+
+    @media(max-width: 500px){
+        left: 208px;
+        width: 8%;
+    }
+}
