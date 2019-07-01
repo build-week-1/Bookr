@@ -103,7 +103,10 @@ header.home {
     }
 
     .btn {
-        .btn-styler(@lg-btn)
+        .btn-styler(@lg-btn);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     // .left-half {
@@ -154,6 +157,11 @@ header.home {
             font-family: @accent-font;
             width: 100%;
             padding-left: 30px;
+
+            @media (max-width: 980px) {
+                width: 30%;
+                padding-right: 25px;
+            }
             
         }
     }
@@ -164,21 +172,22 @@ header.home {
     width: 100%;
     justify-content: flex-end;
 
-    @media (max-width: 950px) {
-        width: 60%;
+    @media (max-width: 1000px) {
+        width: 70%;
     }
 
     
 
     .categories{
         display: flex;
-        justify-content: flex-end;
+        // justify-content: flex-end;
         // width: 100%;
+
+        @media (max-width: 980px) {
+            flex-wrap: wrap;
+        }
         
         .tab.active-tab {
-            // background-color: ;
-            // color: @off-white;
-            // font-weight: bold;
             border-bottom: 5px solid @accent-color;
         }
 
@@ -193,8 +202,13 @@ header.home {
                 background-color 0.3s ease,
                 color 0.1s ease;
             
-            @media (max-width: 950px) {
-                padding: 0px;
+            @media (max-width: 1000px) {
+                padding: 10px 25px;
+            }
+
+            @media (max-width: 980px) {
+                flex-grow: 1;
+                flex-wrap:nowrap;
             }
 
             &:hover {
@@ -202,8 +216,6 @@ header.home {
                 color: white;
                 cursor: pointer;
             }
-
-            
         }
     }
 }
@@ -233,6 +245,14 @@ header.home {
             cursor: pointer;
             transition: all .2s ease-in-out;
             transform: scale(1.1);
+        }
+
+        @media (max-width: 1000px) {
+            width: 33%;
+        }
+
+        @media (max-width: 500px) {
+            width: 50%;
         }
 
         figure {
@@ -279,11 +299,30 @@ header.home {
     box-sizing: border-box;
     padding: 50px 0px;
 
+    @media (max-width: 900px) {
+        // width: 100%;
+        flex-wrap: wrap;
+
+    }
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+
+    }
+
     .feature {
         width: 28%;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media (max-width: 900px) {
+            width: 45%;
+        }
+
+        @media (max-width: 500px) {
+            width: 85%;
+        }
         
 
         img {
@@ -371,7 +410,13 @@ header.home {
     justify-content: center;
     align-items: center;
     background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) ), url("../img/scattered-paper-banner.jpg");
-        background-size: cover;
+    background-size: cover;
+
+    @media (max-width: 980px) {
+        height: auto;
+        box-sizing: border-box;
+        padding: 30px 0px;
+    }
 
     .cta-main-wrapper {
         display: flex;
@@ -381,6 +426,11 @@ header.home {
         padding: 0px 50px;
         width: 95%;
         height: auto;
+
+        @media (max-width: 980px) {
+            flex-direction: column;
+            padding: 0px 15px;
+        }
     }
 
     .cta-content-wrapper {
@@ -393,6 +443,13 @@ header.home {
         box-sizing: border-box;
         padding: 40px inherit;
 
+        @media (max-width: 550px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        
+
         h3 {
             font-size: 2.4rem;
             font-weight: bold;
@@ -400,6 +457,11 @@ header.home {
             width: 60%;
             line-height: 4rem;
             padding: 45px 0px;
+
+            @media (max-width: 780px) {
+                font-size: 1.8rem;
+                // padding: 20px 0px;
+            }
         }
     }
 
@@ -409,7 +471,12 @@ header.home {
         width: 80%;
         align-items: center;
         justify-content: space-evenly;
-        height: 150px;
+        height: 250px;
+
+        @media (max-width: 550px) {
+            width: 100%;
+            // padding-top: 30px;
+        }
         
         
 
@@ -418,9 +485,18 @@ header.home {
             justify-content: center;
             width: 70%;
 
+            @media (max-width: 550px) {
+                width: 100%;
+                padding-top: 30px;
+            }
+
             &:last-child {
                 background-color: @accent-color;
                 color: white;
+            }
+
+            @media (max-width: 1000px) {
+                height: 50px;
             }
         }
     }
